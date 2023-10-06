@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script src="main.js" defer></script>
 
     <title>Todo app</title>
@@ -18,7 +18,7 @@
     <header class="cabecalho">
       <div class="cabecalho__todo">
         <h1>T O D O</h1>
-        <img src="images/icon-sun.svg" alt="Change mode" />
+        <button><img src="images/icon-sun.svg" alt="Change mode" /></button>
       </div>
       <div class="cabecalho__novo-todo">
         <input type="text" name="todo" id="novo-todo" />
@@ -27,21 +27,50 @@
     <main class="todos">
       <div class="todos__lista">
         <div>
-          <input type="text" />
+          <p>
+            <button><img src="images/icon-check.svg" alt="" /></button>
+          </p>
         </div>
         <div>
-          <input type="text" />
+          <p>
+            <button><img src="images/icon-check.svg" alt="" /></button>
+          </p>
         </div>
         <div>
-          <input type="text" />
+          <p>
+            <button><img src="images/icon-check.svg" alt="" /></button>
+          </p>
         </div>
         <div>
-          <input type="text" />
+          <p>
+            <button><img src="images/icon-check.svg" alt="" /></button>
+          </p>
         </div>
         <div>
-          <input type="text" />
+          <p>
+            <button><img src="images/icon-check.svg" alt="" /></button>
+          </p>
+        </div>
+        <div>
+          <p>
+            <button><img src="images/icon-check.svg" alt="" /></button>
+          </p>
+        </div>
+        <div class="ultima-linha">
+          <div class="ultima-linha-1">
+            <p>0 items left</p>
+          </div>
+          <div class="ultima-linha-2">
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
+          </div>
+          <div class="ultima-linha-3">
+            <button>Clear completed</button>
+          </div>
         </div>
       </div>
+      <span>Drag and drop to reorder list</span>
     </main>
   </body>
 </html>
