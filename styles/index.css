@@ -13,6 +13,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgb(9, 9, 9);
+  overflow-x: hidden;
   color: white;
 }
 
@@ -28,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  height: 40%;
+  height: 38%;
   gap: 8%;
   color: white;
   font-family: "Josefin Sans", sans-serif;
@@ -60,33 +61,45 @@ body {
   outline: none;
   color: hsl(234, 39%, 85%);
   padding: 25px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.cabecalho .cabecalho__novo-todo input::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+.cabecalho .cabecalho__novo-todo input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 main .todos__lista {
   width: 35%;
-  border: solid 1px hsl(235, 24%, 19%);
+  height: 50.2vh;
   border-radius: 8px;
   box-shadow: 2px 2px 5px black, -2px 0px 10px black;
+  overflow-y: auto;
 }
 main .todos__lista p {
-  width: 100%;
+  display: flex;
+  align-items: center;
   background-color: hsl(235, 24%, 19%);
   border-bottom: solid 1px hsl(235, 14%, 33%);
   color: hsl(234, 39%, 85%);
   padding: 20px;
-  outline: none;
   border: none;
+  gap: 15px;
 }
 main .todos__lista p button {
   border: solid 1px hsl(235, 14%, 33%);
-  padding: 1% 1.8%;
   border-radius: 50%;
   background-color: transparent;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
 }
 main .todos__lista div {
   width: 100%;
@@ -96,8 +109,8 @@ main .todos__lista div {
 main .todos__lista .ultima-linha {
   display: flex;
   border: none;
-  justify-content: space-around;
-  overflow: hidden;
+  justify-content: space-between;
+  overflow: auto;
 }
 main .todos__lista .ultima-linha div {
   display: flex;
@@ -106,7 +119,6 @@ main .todos__lista .ultima-linha div {
   width: max-content;
 }
 main .todos__lista .ultima-linha p {
-  padding: 15px;
   color: hsl(234, 16%, 45%);
   font-size: 80%;
   font-family: "Josefin Sans", sans-serif;
@@ -128,7 +140,7 @@ main .todos__lista .ultima-linha button:focus {
   color: hsl(220, 98%, 61%);
 }
 main .todos__lista .ultima-linha .ultima-linha-3 button {
-  margin: 12px;
+  margin-right: 20px;
   padding: 3px;
   color: hsl(234, 16%, 45%);
   font-size: 80%;
@@ -144,6 +156,6 @@ main span {
   color: hsl(235, 24%, 19%);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  margin-top: 3%;
+  margin-top: 50px;
   margin-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */
